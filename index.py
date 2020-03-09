@@ -62,7 +62,7 @@ def map():
                             )
         )
         .add(
-            zoom=1.1
+            zoom=1.1,
             is_roam=False, 
             maptype="china", 
             data_pair=data_pair, 
