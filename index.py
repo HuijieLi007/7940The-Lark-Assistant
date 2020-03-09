@@ -55,12 +55,28 @@ def map():
 
 
     map = (
-        Map(init_opts=opts.InitOpts(width='100%',height='600px'))
-        .add(series_name="", data_pair=data_pair, maptype="china")
+        Map(
+            init_opts=opts.InitOpts(
+                                width='100%',
+                                height='600px'
+                            )
+        )
+        .add(
+            zoom=1.1
+            is_roam=False, 
+            maptype="china", 
+            data_pair=data_pair, 
+            series_name="confirmed case", 
+        )
         .set_global_opts(
-                         visualmap_opts = opts.VisualMapOpts(max_=55000, min_=1,
-                                                           range_color=range_color)
-                        )
+            visualmap_opts = opts.VisualMapOpts(
+                                                min_=1,
+                                                max_=55000, 
+                                                is_show = False,
+                                                pos_left = 'left', 
+                                                range_color=range_color
+                                           )
+        )
     )
 
     return send_file(map.render())
