@@ -11,7 +11,7 @@ from pyecharts.charts import Map
 import pandas as pd
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='web-robot-frontend')
 
 # # get channel_secret and channel_access_token from your environment variable
 # channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
