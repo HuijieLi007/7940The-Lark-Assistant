@@ -11194,7 +11194,7 @@
 					var response = '';
 					for(i=0, max=keywords.length; i < max; i++) {
 						if(text == keywords[i][0]) {
-							response = '<a style="color:#005ea7" href = "' +  keywords[i][1] +'">' + "click to view information about: " + keywords[i][0] +' </a>';
+							response = '<a style="color:#005ea7" href = "' +  keywords[i][1] +'">' + "click to view information about: " + keywords[i][0] +'  </a><div>the loading speed may slow due to the redis lab speed</div>';
 						}
 
 						err+= keywords[i][0] + '<br>';
