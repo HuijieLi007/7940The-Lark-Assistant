@@ -1,1 +1,9 @@
-
+** Method: ** web bot
+** Web bot url:** <http://comp7940-project.herokuapp.com/web-robot-frontend/index.html>
+___
+### 1.overview
+The main functions of the lark bird web chat bot include providing links to purchase medical supplies and providing 
+maps of national newcoronvirus reports.
+### 2.detailed function
+* homepage
+(http://comp7940-project.herokuapp.com/web-robot-frontend/index.html "markdown")
