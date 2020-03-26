@@ -44,7 +44,9 @@ def getMap():
         Map(
             init_opts=opts.InitOpts(
                                 width='100%',
-                                height='600px'
+                                height='600px',
+            page_title='coronavirus-map',
+
                             )
         )
         .add(
@@ -61,7 +63,8 @@ def getMap():
                                                 is_show = False,
                                                 pos_left = 'left', 
                                                 range_color = range_color
-                                           )
+                                           ),
+            title_opts = opts.TitleOpts(title='coronavirus-map')
         )
     )
 
