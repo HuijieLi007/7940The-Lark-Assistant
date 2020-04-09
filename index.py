@@ -39,12 +39,12 @@ def pathResource():
     print(resource)
     return render_template('resource.html', resource=resource)
 
-@app.route("/load/resource", methods=['GET'])
+@app.route("/resource", methods=['POST'])
 def pathResourceLoad():
     loadDataToRedis()
     return 'ok'
 
-@app.route("/load/map", methods=['GET'])
+@app.route("/map", methods=['POST'])
 def pathMapLoad():
     loadMapToRedis()
     return 'ok'
