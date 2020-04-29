@@ -26,19 +26,16 @@ def getMap():
     # adjust the color range based on the confirmed case
     range_color = []
     i = 0
-    while i <= 54406:
-        if i <= 10:
+    while i <= 1000:
+        if i == 0:
+            range_color.append('#ffffff')
+        if i <= 10 and i > 0:
             range_color.append('#f2dadb')
         if i > 10 and i <= 99:
             range_color.append('#ce8a86')
         if i > 99 and i <= 980:
             range_color.append('#bf5a53')
-        if i > 980 and i <= 9999:
-            range_color.append('#9e0707')
-        if i > 9999 and i <= 54406:
-            range_color.append('#600a0a')
         i = i + 1
-
 
     map = (
         Map(
@@ -58,9 +55,9 @@ def getMap():
         )
         .set_global_opts(
             visualmap_opts = opts.VisualMapOpts(
-                                                min_=1,
-                                                max_=55000, 
-                                                is_show = False,
+                                                min_=0,
+                                                max_=1000, 
+                                                is_show = True,
                                                 pos_left = 'left', 
                                                 range_color = range_color
                                            ),
